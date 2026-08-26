@@ -5,9 +5,9 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     background: radial-gradient(circle, #2b1100 0%, #0d0d0d 100%) !important;
-    color: #ffffff;
+    color: #ffffff !important;
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
@@ -49,8 +49,8 @@ body {
 .header {
     position: relative;
     z-index: 1;
-    background-color: rgba(13, 13, 13, 0.95);
-    border-bottom: 4px solid #ff6600;
+    background-color: rgba(13, 13, 13, 0.95) !important;
+    border-bottom: 4px solid #ff6600 !important;
     text-align: center;
     padding: 40px 20px;
     box-shadow: 0 4px 20px rgba(255, 102, 0, 0.2);
@@ -59,13 +59,13 @@ body {
 .header h1 {
     margin-bottom: 10px;
     font-size: 2.5rem;
-    color: #ff6600;
+    color: #ff6600 !important;
     text-shadow: 0 2px 10px rgba(255, 102, 0, 0.4);
 }
 
 .header p {
     font-size: 1.1rem;
-    color: #dddddd;
+    color: #dddddd !important;
 }
 
 .container {
@@ -81,9 +81,9 @@ body {
 }
 
 .card {
-    background: rgba(26, 26, 26, 0.95);
+    background: rgba(26, 26, 26, 0.95) !important;
     border: 1px solid #333333;
-    border-top: 5px solid #ff6600;
+    border-top: 5px solid #ff6600 !important;
     border-radius: 12px;
     padding: 28px 24px;
     flex: 1;
@@ -109,20 +109,20 @@ body {
 
 .card h2 {
     font-size: 1.3rem;
-    color: #ff6600;
+    color: #ff6600 !important;
     margin-bottom: 15px;
 }
 
 .card p {
     font-size: 0.95rem;
-    color: #e0e0e0;
+    color: #e0e0e0 !important;
     line-height: 1.6;
     flex-grow: 1;
 }
 
 .fonte {
     font-size: 0.8rem;
-    color: #999999;
+    color: #999999 !important;
     margin-top: 15px;
     font-style: italic;
 }
@@ -134,9 +134,9 @@ body {
 }
 
 .like-btn {
-    background: #262626;
-    color: #ffffff;
-    border: 1px solid #ff6600;
+    background: #262626 !important;
+    color: #ffffff !important;
+    border: 1px solid #ff6600 !important;
     padding: 8px 16px;
     border-radius: 20px;
     cursor: pointer;
@@ -146,6 +146,6 @@ body {
 }
 
 .like-btn:hover {
-    background: #ff6600;
-    color: #000000;
+    background: #ff6600 !important;
+    color: #000000 !important;
 }

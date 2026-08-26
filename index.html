@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Blog de Basquete</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- O ?v=2 força o navegador a carregar o CSS novo -->
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
-    <!-- Linhas decorativas no fundo estilo quadra -->
     <div class="court-overlay">
         <div class="center-circle"></div>
         <div class="three-point-line"></div>
@@ -55,19 +55,6 @@
 
     </main>
 
-    <script>
-        function curtir(botao) {
-            const contador = botao.querySelector('span');
-            let valorAtual = parseInt(contador.innerText);
-            contador.innerText = valorAtual + 1;
-            
-            // Pequena animação no clique
-            botao.style.transform = 'scale(1.15)';
-            setTimeout(() => {
-                botao.style.transform = 'scale(1)';
-            }, 150);
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>

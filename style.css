@@ -6,13 +6,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212;
+    color: #ffffff;
 }
 
 .header {
-    background-color: #1e293b;
-    color: white;
+    background-color: #0d0d0d;
+    border-bottom: 3px solid #ff6600;
     text-align: center;
     padding: 40px 20px;
 }
@@ -20,11 +20,12 @@ body {
 .header h1 {
     margin-bottom: 10px;
     font-size: 2.2rem;
+    color: #ff6600;
 }
 
 .header p {
     font-size: 1rem;
-    color: #cbd5e1;
+    color: #cccccc;
 }
 
 .container {
@@ -32,18 +33,20 @@ body {
     justify-content: center;
     gap: 20px;
     max-width: 1000px;
-    margin: 30px auto;
+    margin: 40px auto;
     padding: 0 20px;
     flex-wrap: wrap;
 }
 
 .card {
-    background: #ffffff;
+    background: #1e1e1e;
+    border: 1px solid #333333;
+    border-top: 4px solid #ff6600;
     border-radius: 8px;
     padding: 24px;
     flex: 1;
     min-width: 250px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,34 +60,29 @@ body {
 
 .card h2 {
     font-size: 1.2rem;
-    color: #0f172a;
-    margin-bottom: 10px;
-}
-
-.autor {
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: #475569;
+    color: #ff6600;
     margin-bottom: 15px;
 }
 
 .card p {
     font-size: 0.9rem;
-    color: #334155;
+    color: #dddddd;
     line-height: 1.5;
     flex-grow: 1;
 }
 
 .fonte {
     font-size: 0.75rem;
-    color: #64748b;
+    color: #888888;
     margin-top: 10px;
 }
 
 .likes {
     margin-top: 15px;
     font-size: 0.85rem;
-    background: #f1f5f9;
+    background: #2a2a2a;
+    color: #ffffff;
     padding: 6px 12px;
     border-radius: 4px;
+    border: 1px solid #ff6600;
 }

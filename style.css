@@ -6,14 +6,13 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: radial-gradient(circle, #2b1100 0%, #0d0d0d 100%);
+    background: radial-gradient(circle, #2b1100 0%, #0d0d0d 100%) !important;
     color: #ffffff;
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
 }
 
-/* Marca d'água de quadra de basquete no fundo */
 .court-overlay {
     position: fixed;
     top: 0;
@@ -22,7 +21,7 @@ body {
     height: 100%;
     pointer-events: none;
     z-index: 0;
-    opacity: 0.12;
+    opacity: 0.15;
 }
 
 .center-circle {
@@ -47,11 +46,10 @@ body {
     border-radius: 50%;
 }
 
-/* Header */
 .header {
     position: relative;
     z-index: 1;
-    background-color: rgba(13, 13, 13, 0.9);
+    background-color: rgba(13, 13, 13, 0.95);
     border-bottom: 4px solid #ff6600;
     text-align: center;
     padding: 40px 20px;
@@ -70,7 +68,6 @@ body {
     color: #dddddd;
 }
 
-/* Conteúdo principal e Cards */
 .container {
     position: relative;
     z-index: 1;
@@ -130,7 +127,6 @@ body {
     font-style: italic;
 }
 
-/* Botões Interativos de Curtida */
 .likes-container {
     display: flex;
     gap: 12px;

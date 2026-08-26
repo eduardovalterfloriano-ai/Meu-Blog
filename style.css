@@ -5,84 +5,151 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle, #2b1100 0%, #0d0d0d 100%);
     color: #ffffff;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
 }
 
+/* Marca d'água de quadra de basquete no fundo */
+.court-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.12;
+}
+
+.center-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    border: 4px solid #ff6600;
+    border-radius: 50%;
+}
+
+.three-point-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    border: 4px solid #ff6600;
+    border-radius: 50%;
+}
+
+/* Header */
 .header {
-    background-color: #0d0d0d;
-    border-bottom: 3px solid #ff6600;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(13, 13, 13, 0.9);
+    border-bottom: 4px solid #ff6600;
     text-align: center;
     padding: 40px 20px;
+    box-shadow: 0 4px 20px rgba(255, 102, 0, 0.2);
 }
 
 .header h1 {
     margin-bottom: 10px;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     color: #ff6600;
+    text-shadow: 0 2px 10px rgba(255, 102, 0, 0.4);
 }
 
 .header p {
-    font-size: 1rem;
-    color: #cccccc;
+    font-size: 1.1rem;
+    color: #dddddd;
 }
 
+/* Conteúdo principal e Cards */
 .container {
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    max-width: 1000px;
+    gap: 24px;
+    max-width: 1100px;
     margin: 40px auto;
     padding: 0 20px;
     flex-wrap: wrap;
 }
 
 .card {
-    background: #1e1e1e;
+    background: rgba(26, 26, 26, 0.95);
     border: 1px solid #333333;
-    border-top: 4px solid #ff6600;
-    border-radius: 8px;
-    padding: 24px;
+    border-top: 5px solid #ff6600;
+    border-radius: 12px;
+    padding: 28px 24px;
     flex: 1;
-    min-width: 250px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    min-width: 280px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(255, 102, 0, 0.3);
+    border-color: #ff6600;
 }
 
 .icon {
-    font-size: 40px;
+    font-size: 48px;
     margin-bottom: 15px;
 }
 
 .card h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #ff6600;
     margin-bottom: 15px;
 }
 
 .card p {
-    font-size: 0.9rem;
-    color: #dddddd;
-    line-height: 1.5;
+    font-size: 0.95rem;
+    color: #e0e0e0;
+    line-height: 1.6;
     flex-grow: 1;
 }
 
 .fonte {
-    font-size: 0.75rem;
-    color: #888888;
-    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #999999;
+    margin-top: 15px;
+    font-style: italic;
 }
 
-.likes {
-    margin-top: 15px;
-    font-size: 0.85rem;
-    background: #2a2a2a;
+/* Botões Interativos de Curtida */
+.likes-container {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.like-btn {
+    background: #262626;
     color: #ffffff;
-    padding: 6px 12px;
-    border-radius: 4px;
     border: 1px solid #ff6600;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background 0.2s, transform 0.15s ease;
+}
+
+.like-btn:hover {
+    background: #ff6600;
+    color: #000000;
 }
